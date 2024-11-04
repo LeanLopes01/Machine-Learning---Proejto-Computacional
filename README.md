@@ -3,8 +3,11 @@ Para usar os arquivos, eles devem estar na mesma pasta e deve instalar os seguin
   pip install numpy
   pip install opencv-python
   pip install mediapipe
+  pip install PyQT6
   
-Esse projeto foi desenvolvido para a matéria de Projeto Computacional de EEL-USP do curso de Engenharia Física
+Para a versão 0.3 do projeto, foi feito as seguintes mudanças:
+  transformar o banco de dados e o reconhecimento em classes
+  criar uma interface gráfica para registrar o rosto e o nome da pessoa no banco de dados
 
-A idade do projeto é pegar um vídeo ou imagem e detectar nele objetos desejados pelo usuário. 
-Inicialmente servirá para detectar movimentos humanos, podendo ser usado para segurança de uma casa e detectar se está sendo invadida, apenas um pedestre ou um morador.
+Falta fazer:
+  conectar tudo
