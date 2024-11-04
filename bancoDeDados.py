@@ -2,7 +2,7 @@ import sqlite3
 import pandas as pd
 from datetime import datetime
 
-#conecta ao bando de dados sqlite3
+#conecta ao banco de dados sqlite3
 conexao = sqlite3.connect("reconhecimento_facial.db")
 cursor = conexao.cursor()
 
