@@ -1,10 +1,8 @@
-# Machine-Learning---Proejto-Computacional
-Para usar os arquivos, eles devem estar na mesma pasta e deve instalar os seguintes módulos:
-  pip install numpy
-  pip install opencv-python
-  pip install mediapipe
-  
-Esse projeto foi desenvolvido para a matéria de Projeto Computacional de EEL-USP do curso de Engenharia Física
+# Reconhecimento Facial---Proejto-Computacional
+As bibliotecas usadas no projeto foram: numpy, face_recognition, sqlite3, PyQt6, opencv
 
-A idade do projeto é pegar um vídeo ou imagem e detectar nele objetos desejados pelo usuário. 
-Inicialmente servirá para detectar movimentos humanos, podendo ser usado para segurança de uma casa e detectar se está sendo invadida, apenas um pedestre ou um morador.
+O programa utiliza o face_recognition para registrar o rosto do usuário e salva-lo em uma banco de dados feito pelo sqlite3, feito isso você pode deixar para detectar suspeitos (pessoas não registradas no banco de dados)
+
+Com o PyQt6 foi feito uma interface usando o QT Designer e transformado no window.py que faz todo o código funcionar. 
+
+Para utilizar o programa deve primeiramente clicar em Registrar Rosto e inserir seu nome no campo popup que abrir. Espere cerca de 10 segundos até aparecer a mensagem que a imagem foi salva. Após isso clique em detectar suspeitos e isso vai rodar o código que toda vez que ver alguem que está salvo no banco de dados irá responder no print. No botão sair o aplicativo fecha.
