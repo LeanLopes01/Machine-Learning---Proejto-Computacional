@@ -1,3 +1,7 @@
+'''
+Este código cria o banco de dados .bd com as colunas: id (chave primária), nome, data_hora e valores_landmarks.
+'''
+
 import sqlite3
 
 conexao = sqlite3.connect("reconhecimento_facial.db")
