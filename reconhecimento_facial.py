@@ -45,7 +45,7 @@ class Reconhecimento:
 
     def detectar_suspeitos(self):
         try:
-            # Obter todas as pessoas permitidas do banco de dados
+            ### obter todas as pessoas permitidas do banco de dados ###
             sb = bd.SelecaoTodosNomes()
             pessoas_autorizadas = sb.SelecionarTodosNomes()
 
@@ -59,7 +59,7 @@ class Reconhecimento:
                 nomes_autorizados.append(pessoa["nome"])
                 codificacoes_autorizadas.append(np.array(pessoa["face_encoding"]))
 
-            # Iniciar captura de vídeo
+            ### iniciar captura de vídeo ###
             self.cap = cv2.VideoCapture(0)
             print(self, "Instruções", "Verificando rostos... Pressione 'q' para sair.")
 
@@ -69,7 +69,7 @@ class Reconhecimento:
                     print(self, "Erro", "Erro ao capturar o vídeo.")
                     break
 
-                # Detectar rostos no quadro atual
+                ### detectar rostos no quadro atual ###
                 rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
                 face_locations = face_recognition.face_locations(rgb_frame)
                 face_encodings = face_recognition.face_encodings(rgb_frame, face_locations)
@@ -87,10 +87,10 @@ class Reconhecimento:
                     else:
                         mensagem = "Suspeito detectado! Nenhum rosto correspondente encontrado."
 
-                    # Exibir mensagem no console ou interface
+                    ### exibir mensagem no console ou interface ###
                     print(mensagem)
 
-                # Atualizar o feed de vídeo na interface (se aplicável)
+                ### atualizar o feed de vídeo na interface (se aplicável) ###
                 self.update_video_frame(frame)
 
                 if cv2.waitKey(1) & 0xFF == ord('q'):
