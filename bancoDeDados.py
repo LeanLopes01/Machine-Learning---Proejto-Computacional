@@ -1,3 +1,10 @@
+''' 
+O banco de dados serve para registar ou selecionar... os dados. 
+Aqui é onde registramos os dados que foram identificados e onde podemos selecionar esses 
+dados para o reconhecimento_facial.py poder identificar os suspeitos ou quem está cadastrado
+
+
+'''
 import sqlite3
 import json
 from datetime import datetime
