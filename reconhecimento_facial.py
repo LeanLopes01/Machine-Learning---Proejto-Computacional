@@ -1,3 +1,8 @@
+''' 
+Aqui é o código que faz todas as landmarcks dos rostos que ficam na frente da câmera, ele pega todas as landmarck registradas
+no arquivo de bancoDeDados.py e importa os rostos já registrados no banco de dados
+''''
+
 import sys
 import face_recognition
 import cv2
