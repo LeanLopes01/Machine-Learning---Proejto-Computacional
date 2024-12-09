@@ -1,3 +1,9 @@
+'''
+Este é o grosso do código mesmo, é aqui onde temos a interface do nosso reconhimento facial e onde podemos registrar novos usuários e detectar suspeitos.
+É onde também o código reconhece se há um usuário registrado, e se não houver ele reconhece a pessoa como "suspeito detectado"
+E sim, o botão SAIR funciona.
+'''
+
 import reconhecimento_facial as rf
 import bancoDeDados as bd
 from PyQt6 import QtCore, QtGui, QtWidgets
