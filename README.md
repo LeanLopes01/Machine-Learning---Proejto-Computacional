@@ -4,6 +4,8 @@ Este projeto é um sistema de vigilância residencial com reconhecimento facial,
 Para baixar o **face_recognition** deve primeiramente baixar o **CMake** no computador. Site: https://cmake.org/download/
 Após baixar o **CMake** vá ao cmd e coloque o seguinte código: pip install face_recognition. Espere baixar e poderá usar o programa.
 
+Antes de iniciar o programa inicie o "createBD.py" para ele criar o banco de dados.
+
 O funcionamento do sistema é simples e prático. Para registrar um rosto, o usuário deve clicar no botão **Registrar Rosto** e inserir seu nome no campo que aparece em um popup. Após isso, o programa capturará a imagem do rosto e a armazenará no banco de dados. O processo leva cerca de 10 segundos, e ao final, uma mensagem de confirmação será exibida, indicando que a imagem foi salva. Além disso, a lista de pessoas registradas será atualizada na aba de texto exibida abaixo da interface.
 
 Uma vez que os rostos estejam registrados, é possível ativar a detecção de suspeitos clicando no botão **Detectar Suspeitos**. O sistema passará a monitorar em tempo real, identificando as pessoas presentes. Quando uma pessoa registrada no banco de dados for reconhecida, o programa exibirá seu nome no terminal. Caso seja detectada uma pessoa que não está registrada, o sistema a marcará como suspeita.
